@@ -1,11 +1,16 @@
+# application of DFS
+
 # given a maze of size NxN represented by a 2D matrix
 # matrix[i][j] takes either of 2 values: 0 or 1
 # 1 means path (i.e. u can go), 0 means wall (i.e. u cannot go)
-# find the way to go from top left corner to bottom right corner
+# find the way to go from top left corner (0,0) to bottom right corner (m-1.n-1)
 # given that you can only go up/down, left/right
+
+
 # application: navigate a robot in most effective manner
-# approaches: 1. if we know the maze, can use heavy-weight graph alog like Dijkstra algorithm and A* search
-# 2. if we dont know the maze, use backtracking (DFS)
+# approaches: 1. if we know the maze, can use heavy-weight graph algo like Dijkstra algorithm and A* search
+# 2. if we don't know the maze, use backtracking (DFS)
+
 
 # Note: prioritise go down and go right to get better (shorter) path (given start at top left and end at bottom right)
 # go up and go down are still in need in certain cases (like m)

@@ -1,0 +1,20 @@
+- problem: find the optimum value among all the states
+- brute-force algorithm: try all states -> could be exhausting
+- hill climbing algo: tends to converge to local optimum
+- simulated annealing: move from 1 state to another (could be random strategy)
+and check if the value gets better
+- if only allow good move all the time, we can only find local maximum
+- allow bad move in order to find global maximum
+- but we should allow bad move with lower probability over time
+- to simulate this acceptance probability, we use annealing concept in engineer
+T: temperature
+if T is high then we can accept bad moves
+if T is low then we keep accepting good moves exclusively as with hill climbing
+- T typically starts off high and slowly lowered in every iteration
+- at each iteration, a new candidate state is generated (randomly for example)
+its distance from current point is proportional to the temperature
+- if the new point is better, it replaces the current point as the actual best so far
+- it is possible to accept and move forward with a a worse state
+- the probability of doing so is dependent on T
+- Metropolis function:
+e ^ ((actual_energy - neighbor energy)/temperature) < random (0, 1)

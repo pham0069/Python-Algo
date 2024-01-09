@@ -1,6 +1,9 @@
 # Word wide web (www) can be represented as a directed graph
 # vertices: domains/ URLs/ websites
 # edges: connections btw websites via links
+# given a starting url, get all urls that are linked to this url, directly or indirectly
+# this called WEB CRAWLING
+# application of BFS
 
 import requests
 import re

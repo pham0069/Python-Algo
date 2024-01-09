@@ -1,0 +1,25 @@
+1. Overview
+- motivation behind genetic algorithm is same as simulated annealing
+to avoid local optimums and find global optimum
+- inspired by the process of natural selection - relying on biologically inspired operators
+such as mutation, crossover and selection
+- genetic algo: search heuristic that mimic the process of natural selection
+- natural selection: process through which species adapt to their environments
+it's the engine that drive evolution
+- it generate solutions to optimization problems using techniques inspired by natural evolution
+such as mutation and crossover
+- a candidate solution is evolved toward better and better solutions
+- each candidate solution has a set of properties (genes) which can be mutated and altered
+- usually the solution is represented in binary
+- the evolution starts from a population of randomly generated individuals
+- it's an iterative process
+the population in each iteration is called a generation
+- in each generation the fitness of every individual in the population is evaluated with fitness function
+- the fitness is usually the value of the cost function in the optimization problem being solved
+- the more fit individuals are selected from the current population and each individual's genome is modified
+- recombined and possibly randomly mutated to form a new generation
+- the new generation of candidate solutions is then used in the next iteration
+- the algorithm terminates when either a maximum number of generations has been produced
+or a satisfactory fitness level has been reached for the population
+
+2. Chromosome
